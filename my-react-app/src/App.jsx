@@ -1,22 +1,39 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import logo from './assets/SYNTHTECH_FULL.png'
 import './App.css'
+import Home from './Home'
+import WhatWeDo from './WhatWeDo'
+import OurStory from './OurStory'
+import Contact from './Contact'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+function MyLogo() {
+  return <img src={logo} alt="Syntech Solutions Logo" className="logo"/>
+}
 
 function App() {
-  const [count, setCount] = useState(0)
+  return (
+    <BrowserRouter>
+      {/* Navigation */}
+      <nav>
+        <Link to="/"><MyLogo/></Link>
+        <Link to="/OurStory">Our Story</Link> 
+        <Link to="/whatWeDo">What We Do</Link> 
+        <Link to="/contact">Contact</Link>
+      </nav>
+      <main>
+      </main>
 
-  return (<>
-  <nav className="App">
-    <img
-
-
-  </nav>
-  
-  
-  </>
-    
-  )
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/OurStory" element={<OurStory />} />
+        <Route path="/whatWeDo" element={<WhatWeDo />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
+
 
 export default App
