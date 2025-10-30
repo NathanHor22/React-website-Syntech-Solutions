@@ -1,6 +1,7 @@
 #root {
-  max-width: 1280px;
+  max-width: 1880px;
   margin: 0 auto;
+  text-align: center;
 }
 
 * {
@@ -10,15 +11,30 @@
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position:sticky;
-  padding: 1rem 0;
-  top:0;
-  width: 100%;
+  position: sticky;
+  top: 0;
   z-index: 100;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+nav .nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+  padding: 0 1rem; /* optional: page gutters */
+}
+
+nav .nav-inner > a:first-child {
+  margin-right: auto; /* logo left, links to the right */
+}
+
+.content-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 nav a {

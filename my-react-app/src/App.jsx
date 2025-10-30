@@ -16,10 +16,12 @@ function App() {
     <BrowserRouter>
       {/* Navigation */}
       <nav>
-        <Link to="/"><MyLogo/></Link>
-        <Link to="/OurStory">Our Story</Link> 
-        <Link to="/whatWeDo">What We Do</Link> 
-        <Link to="/contact">Contact</Link>
+        <div className="nav-inner">
+          <Link to="/"><MyLogo/></Link>
+          <Link to="/OurStory">Our Story</Link>
+          <Link to="/whatWeDo">What We Do</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
       </nav>
       <main>
       </main>
