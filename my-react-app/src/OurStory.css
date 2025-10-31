@@ -1,0 +1,38 @@
+.our-story {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    padding: 2rem 1rem;
+  }
+  
+  .since-card {
+    width: 100%;
+    max-width: 720px;
+    border: 2px solid #444;         /* outline */
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: rgba(0,0,0,0.35);   /* subtle backdrop; optional */
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  }
+  
+  .since-heading {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    margin-bottom: 0.75rem;
+  }
+  
+  /* optional: refine the counter spacing */
+  .since-counter {
+    margin-top: 0.5rem;
+  }
+  .since-values {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  .since-values > div strong {
+    font-size: 1.25em;
+  }
