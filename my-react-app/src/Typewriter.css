@@ -1,0 +1,14 @@
+.typewriter-text {
+    display: inline;
+  }
+  
+  .typewriter-cursor {
+    margin-left: 2px;
+    /* Blinking animation: */
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
