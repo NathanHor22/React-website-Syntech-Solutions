@@ -1,5 +1,4 @@
 # React Website – Syntech Solutions  
-*Built by [Your Name]*  
 
 ![React](https://img.shields.io/badge/React-18.0.0-61DAFB?logo=react&logoColor=white&style=flat)
 ![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
